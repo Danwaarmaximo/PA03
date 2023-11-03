@@ -69,7 +69,6 @@ int main(int argc, char **argv) {
         // Parent process
         MakeTransactions(Bank);
         wait(NULL); // Wait for the child process to complete
-        printf("Child process completed.\n");
 
         // Print the balances after transactions
         printf("Let's check the balances A:%d + B:%d ==> %d ?= 200\n", Bank->balance[0], Bank->balance[1], Bank->balance[0] + Bank->balance[1]);
